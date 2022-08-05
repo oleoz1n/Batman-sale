@@ -1,0 +1,210 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(/img/background-batman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: rgb(40, 43, 82);
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    animation: zoom-left 1.5s;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#sa1 {
+    background-color: rgb(24, 26, 56);
+    animation: color 0s;
+}
+
+li {
+    list-style: none;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: lightblue;
+    cursor: pointer;
+    background-color: rgb(40, 43, 82);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    animation: color2 1s;
+}
+
+li:hover {
+    color: lightblue;
+    animation: color 0.8s;
+    background-color: rgb(24, 26, 56);
+}
+
+section {
+    animation: zoom 2s;
+}
+
+.intro {
+    margin-left:100px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: lego;
+    color: yellow;
+    font-size: 120px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.content {
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    padding-left: 50px;
+    width: 80%;
+    height: 440px;
+    border-radius: 0.4rem;
+    margin-left: 2rem;
+    background-color: rgba(0, 0, 0, 0.247);
+    justify-content: center;
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    margin-top:0px;
+}
+
+#steambotao {
+    height: 70px;
+}
+
+.botao {
+    height: 100px;
+    width: 300px;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.botao:hover {
+    background-color:rgba(0, 0, 0, 0.411);
+}
+
+.botao:active {
+    background-color: rgba(49, 92, 211, 0.637);
+}
+
+a {
+    text-decoration: none;
+}
+
+#soma {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: none;
+    justify-content: center;
+    align-items:center;
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+}
+
+.close:hover {
+    opacity: 0.6;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+iframe {
+    width: 1600px;
+    height: 900px;
+}
+
+@font-face {
+    font-family: lego;
+    src: url(/fonts/NiseSegaSonic.TTF);
+}
+
+@keyframes zoom {
+    from {
+       transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes zoom-left {
+    from {
+        margin-right: -2000px;
+    }
+
+    to {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+}
+
+@keyframes color {
+
+    0% {
+        background-color: rgb(40, 43, 82);
+    }
+
+    100%{
+        background-color:rgb(24, 26, 56);
+    }
+}
+
+@keyframes color2 {
+
+    0% {
+            background-color: rgb(24, 26, 56);
+        }
+    
+        100% {
+            background-color: rgb(40, 43, 82);
+        }
+}
