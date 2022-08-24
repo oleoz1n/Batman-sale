@@ -7,4 +7,3 @@ let sinopse = document.getElementById('sa3')
 function sa2() {
     soma.style.display = "flex";
 }
-

@@ -4,6 +4,7 @@ body {
     background-image: url(/img/background-batman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -16,7 +17,7 @@ nav {
     animation: zoom-left 1.5s;
 }
 
-ul {
+#bom {
     display: flex;
     justify-content: center;
     padding: 0px;
@@ -28,7 +29,7 @@ ul {
     animation: color 0s;
 }
 
-li {
+#bom li {
     list-style: none;
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -40,7 +41,7 @@ li {
     animation: color2 1s;
 }
 
-li:hover {
+#bom li:hover {
     color: lightblue;
     animation: color 0.8s;
     background-color: rgb(24, 26, 56);
@@ -70,7 +71,7 @@ h1 {
     display: flex;
     padding-left: 50px;
     width: 80%;
-    height: 440px;
+    min-height: 440px;
     border-radius: 0.4rem;
     margin-left: 2rem;
     background-color: rgba(0, 0, 0, 0.247);
@@ -207,4 +208,57 @@ iframe {
         100% {
             background-color: rgb(40, 43, 82);
         }
+}
+
+.steam2 {
+    display: none;
+}
+
+#menu {
+    margin:10px;
+}
+
+#menu li {
+    list-style: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 820px) {
+    body {
+        background-image: url(/img/batmanwallpaper.png);
+    }
+
+    .content {
+        display: none;
+    }
+
+    h1{
+        font-size:50px;
+    }
+
+    .intro {
+        margin: 0px;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .steam2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        display: none;
+    }
+
+    .doido {
+        position: fixed;
+        bottom: 40px;        
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
 }
